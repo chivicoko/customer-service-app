@@ -7,7 +7,6 @@ import Feedback from "./Feedback";
 
 
 class ComplaintsForm extends Component {
-
     constructor(props) {
         super(props);
 
@@ -42,7 +41,7 @@ class ComplaintsForm extends Component {
         this.setState({[e.target.name] : e.target.value})
     }
 
-    handleComplaintSubmission =(e) => {
+    handleComplaintSubmission = (e) => {
         e.preventDefault();
         const {fullName, email, reason, description} = this.state;
 
